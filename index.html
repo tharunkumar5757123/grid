@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        *,html{
+            /* padding: 0px; */
+            margin: 0px;
+        }
+        body{
+            padding: 10px;
+            height: 200vh;
+            background-color: rgb(74, 74, 71);
+        }
+        .container {
+            /* padding: 10px; */
+            /* height:100px; */
+            display: grid;
+            /* width: 350px; */
+            grid-template-areas: 'header aside section'
+                                 'header aside footer';
+                background-color: rgb(107, 104, 104)   ;
+                /* grid-template-columns:350px 350px 470px; */
+                /* grid-template-columns: repeat(3,390px); */
+                grid-template-columns:minmax(100px,1rf);
+
+                grid-template-rows: 230px 230px;
+    
+
+        }     
+        .header{
+            grid-area: header;
+            background-color: blueviolet;
+        } 
+        .aside{
+            grid-area: aside;
+            background-color: rgb(2, 181, 62);
+        } .section{
+            grid-area: section;
+            background-color: #006400;
+        } .footer{
+            grid-area: footer;
+            background-color: yellow;
+        }
+        img{
+            width:390px;
+            height: 460px;
+        }
+        .p{
+            background-color: rgb(182, 180, 180);
+            color: black;
+            height: 40px;
+            
+        }
+        .p1{
+            padding: 10px;
+            padding-left: 40px;
+            color: black;
+            font-weight: 900;
+        }
+        .p2{
+
+            color:whitesmoke;
+            padding-top: 30px;
+            padding-left:15px ;
+            padding-right:10px ;
+            font-size: 10px;
+            font-weight:500;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .p3{
+/* display: flex; */
+            color: hwb(0 46% 53%);
+            padding-top: 30px;
+            padding-left:15px ;
+            padding-right: 10px;
+            font-size: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .p4{
+            color: black;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-seri;
+           padding-top: 65px;
+           padding-left: 40px;
+           font-size: 30px;
+
+        }
+        .link{
+            display: flex;
+        justify-content: center;
+        font-size: 18px;
+        padding-top: 20px;
+        gap: 8px;
+        }
+        .link>a{
+        color: yellow;
+        }
+        .link>p{
+        color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p">
+        <p class="p1">NICE PAGE</p>
+    </div>
+    <div class="container">
+        <div  class="header"><img  src="https://wallpaperaccess.com/full/2738709.jpg" alt=""></div>
+        <div  class="aside"><img  src="https://wallpaperaccess.com/full/2823567.jpg" alt=""></div>
+        <div  class="section">
+            <p class="p2">This is another great story that teaches a lesson that’s written for kids but adults can enjoy, too. The story tells of a grasshopper who lounges around all summer while his friend the ant prepares for the winter. When winter comes, the two friends end up in very different situation</p>
+            <p class="p3">In this story, an old man sets out to ask an African king to dig some wells in his village when their water runs dry. But first, he teaches the king a lesson in humility by showing him how all people help each other. Read the story to see how the clever old man gets the king to do as he asks!</p>
+        </div>
+        <div id="item4" class="footer"><p class="p4">DESIGN IS A WAY <br> OF LIFE</p></div>
+    </div>
+    <div class="link">
+    <a href="">website template</a>
+    <p>created with</p>
+    <a href="">website builder software</a>
+
+    </div>
+    </body>
+
+</html>
